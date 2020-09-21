@@ -113,6 +113,11 @@ td button {
     color: black;
 }
 
+td button:hover {
+    background-color: #a29111;
+    color: white;
+}
+
 td{
     text-align: center;
 }
