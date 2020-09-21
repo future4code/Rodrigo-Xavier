@@ -119,11 +119,14 @@ td button {
     color: black;
 }
 
+td{
+    text-align: center;
+}
+
 .container-do-search {
     margin-top: 20px;
     height: 100px;
 }
-
 
 #back-button {
     background-color: white;
