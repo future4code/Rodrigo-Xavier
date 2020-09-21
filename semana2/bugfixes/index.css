@@ -69,11 +69,11 @@ div>p:first-child {
     padding: 100px 0;
 }
 
-
-
-
 #container-de-descricao>ol {
     padding: 15px 0px;
+    list-style-position: inside;
+    
+    
 }
 
 #container-para-comprar {
@@ -106,7 +106,7 @@ div:last-child {
 
 table {
     width: 60%;
-    margin-left: 260px;
+    margin: 0 260px;
 }
 
 td button {
