@@ -1,0 +1,85 @@
+/* Fase 1 */
+grid-column-start: 3;
+
+/* Fase 2 */
+grid-column-start: 5;
+
+/* Fase 3 */
+grid-column-end: 4;
+
+/* Fase 4 */
+grid-column-end: 2;
+
+/* Fase 5 */
+grid-column-end: -2;
+
+/* Fase 6 */
+grid-column-start: -3;
+
+/* Fase 7 */
+grid-column-end: span 2;
+
+/* Fase 8 */
+grid-column-end: span 5;
+
+/* Fase 9 */
+grid-column-start: span 3;
+
+/* Fase 10 */
+grid-column: 4/6;
+
+/* Fase 11 */
+grid-column: span 3/5;
+
+/* Fase 12 */
+grid-row-start: 3;
+
+/* Fase 13 */
+grid-row: 3/6;
+
+/* Fase 14 */
+grid-column: 2;
+grid-row: 5;
+
+/* Fase 15 */
+grid-column: 2/6;
+grid-row: 1/6;
+
+/* Fase 16 */
+grid-area: 1/2/4/6;
+
+/* Fase 17 */
+grid-area: 2/3/5/6;
+
+/* Fase 18 */
+order: 1;
+
+/* Fase 19 */
+order: -1;
+
+/* Fase 20 */
+grid-template-columns: 50%
+
+/* Fase 21 */
+grid-template-columns: repeat(8, 12.5%);
+
+/* Fase 22 */
+grid-template-columns: 100px 3em 40%;
+
+/* Fase 23 */
+grid-template-columns: 1fr 5fr;
+
+/* Fase 24 */
+grid-template-columns: 50px 1fr 1fr 1fr 50px;
+
+/* Fase 25 */
+grid-template-columns: 75px 3fr 2fr;
+
+/* Fase 26 */
+grid-template-rows: 50px 0fr 0fr 0fr;
+
+/* Fase 27 */
+grid-template: 60%/200px;
+
+/* Fase 28 */
+grid-template: 1fr 50px/20% 80%;

@@ -1,0 +1,88 @@
+/* Fase 1 */
+justify-content: flex-end;
+
+/* Fase 2 */
+justify-content: center;
+
+/* Fase 3 */
+justify-content: space-around;
+
+/* Fase 4 */
+justify-content: space-between;
+
+/* Fase 5 */
+align-items: flex-end;
+   
+/* Fase 6 */
+justify-content: center;
+align-items: center;
+
+/* Fase 7 */
+justify-content: space-around;
+align-items: flex-end;
+
+/* Fase 8 */
+flex-direction: row-reverse;
+
+/* Fase 9 */
+flex-direction: column;
+
+/* Fase 10 */
+flex-direction: row-reverse;
+justify-content: flex-end;
+
+/* Fase 11 */
+flex-direction: column;
+justify-content: flex-end;
+
+/* Fase 12 */
+flex-direction: column-reverse;
+justify-content: space-between;
+
+/* Fase 13 */
+flex-direction: row-reverse;
+justify-content: center;
+align-items: flex-end;
+
+/* Fase 14 */
+order: 1;
+
+/* Fase 15 */
+order: -1
+
+/* Fase 16 */
+align-self: flex-end;
+
+/* Fase 17 */
+order: 1;
+align-self: flex-end;
+
+/* Fase 18 */
+flex-wrap: wrap;
+
+/* Fase 19 */
+flex-direction: column;
+flex-wrap: wrap;
+
+/* Fase 20 */
+flex-flow: column wrap;
+
+/* Fase 21 */
+align-content: flex-start;
+
+/* Fase 22 */
+align-content: flex-end;
+
+/* Fase 23 */
+flex-direction: column-reverse;
+align-content: center;
+
+/* Fase 24 */
+flex-direction: column-reverse;
+flex-wrap: wrap-reverse;
+align-content: space-between;
+justify-content: center;
+
+
+
+
