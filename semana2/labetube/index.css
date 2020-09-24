@@ -7,10 +7,10 @@ body {
 }
 
 Header {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: rgb(164, 71, 14);
     background-color: rgb(181, 94, 17);
-    height: 9rem;
+    height: 7rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -38,17 +38,16 @@ img {
   background-color:rgb(228, 146, 84);
   color: rgb(109, 52, 1);
   padding: 15px 32px;
-  text-align: center;
+  text-align: ;
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
   margin: 4px 2px;
-  cursor: pointer;
 }
 
 article {
     font-size: 25px;
-    margin: 80px
+    margin: 30px
 }
 
 div{
