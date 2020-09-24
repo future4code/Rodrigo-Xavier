@@ -3,16 +3,18 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
+    background-color: rgb(245, 235, 222);
 }
 
-h1 {
-    color: red;
-    background-color: black;
-    height: 8rem;
+Header {
+    font-size: 2.5rem;
+    color: rgb(164, 71, 14);
+    background-color: rgb(181, 94, 17);
+    height: 9rem;
     display: grid;
-    justify-content: center;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    
+    padding: 0 80px;
 }
 
 #grade {
@@ -26,16 +28,15 @@ img {
     height: auto;
 }
 
-.bloco1 {
-font-size: 2rem;
-
-
-
+.letrabloco {
+    text-decoration: none;
+    font-size: 2rem;
+    color: rgba(7, 6, 5, 0.632);
 }
 
 #botaovoltar{
-  background-color: rgb(213, 194, 194);
-  color: rgb(211, 32, 32);
+  background-color:rgb(228, 146, 84);
+  color: rgb(109, 52, 1);
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -54,7 +55,6 @@ div{
     display: grid;
     align-items: center;
     justify-content: center;
-    
 }
 
 footer {
@@ -63,6 +63,7 @@ footer {
     position: fixed;
     bottom: 0;
     font-size: 3rem;
-    color: red;
-    background-color: black;
+    background-color: rgb(228, 146, 84);
+    color: rgb(235, 184, 139);
+    text-align: end;
 }
