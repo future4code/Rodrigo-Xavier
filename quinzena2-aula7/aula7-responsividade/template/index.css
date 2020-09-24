@@ -1,0 +1,264 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+#first-block {
+    background-color: red;
+    padding: 3rem;
+}
+
+#bloco1 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 10rem;
+}
+
+#bloco2 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 10rem;
+}
+
+#bloco3 {
+    display: grid;
+    grid-template-columns: repeat(2,1.5fr);
+    height: 15rem;
+}
+
+#bloco4 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 10rem;
+}
+
+.blue-block {
+    background-color: blue;
+    margin: 5px; 
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 5px;
+    border: solid 1px;
+}
+
+.yellow-block {
+    background-color: yellow;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 5px;
+    border: solid 1px;
+}
+
+.green-block {
+    background-color: green;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 5px;
+    border: solid 1px;
+}
+
+.black-block {
+    background-color: black;
+    color: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 5px;
+    border: solid 1px;
+
+}
+
+.white-block {
+    background-color: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 5px;
+    border: solid 1px;
+}
+
+@media screen and (min-device-width : 421px) and (max-device-width : 800px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+    }
+
+    #first-block {
+        background-color: red;
+        padding: 3rem;
+    }
+    
+    #bloco1 {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        height: 15rem;
+    }
+    
+    .green-block {
+        display: grid;
+        grid-column: 1/4;
+    }
+
+    #bloco2 {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        height: 15rem;
+    }
+    
+    #bloco3 {
+        display: grid;
+        grid-template-columns: repeat(2,1.5fr);
+        height: 10rem;
+    }
+    
+    #bloco4 {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        height: 15rem;
+    }
+    
+    .blue-block {
+        background-color: blue;
+        margin: 5px; 
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        margin: 5px;
+        border: solid 1px;
+    }
+    
+    .yellow-block {
+        background-color: yellow;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        margin: 5px;
+        border: solid 1px;
+    }
+    
+    .green-block {
+        background-color: green;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        margin: 5px;
+        border: solid 1px;
+    }
+    
+    .black-block {
+        background-color: black;
+        color: white;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        margin: 5px;
+        border: solid 1px;
+    }
+    
+    .white-block {
+        background-color: white;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        margin: 5px;
+        border: solid 1px;
+    }
+
+    #branco {
+        display: grid;
+        grid-column: 1/4;
+    }
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 420px) {
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+    }
+
+    #first-block {
+        background-color: red;
+        padding: 2.5rem;
+    }
+    
+    #bloco1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 15rem;
+    }
+
+    #bloco2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 15rem;
+    }
+    
+    #bloco3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 10rem;
+    }
+    
+    #bloco4 {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 15rem;
+    }
+    
+    .blue-block {
+        background-color: blue;
+        margin: 5px; 
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        margin: 5px;
+        border: solid 1px;
+    }
+    
+    .yellow-block {
+        background-color: yellow;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        margin: 5px;
+        border: solid 1px;
+    }
+    
+    .green-block {
+        background-color: green;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        margin: 5px;
+        border: solid 1px;
+    }
+    
+    .black-block {
+        background-color: black;
+        color: white;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        margin: 5px;
+        border: solid 1px;
+    }
+    
+    .white-block {
+        background-color: white;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        margin: 5px;
+        border: solid 1px;
+    }
+}
