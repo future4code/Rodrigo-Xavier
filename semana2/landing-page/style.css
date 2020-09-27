@@ -11,19 +11,18 @@ header{
     display: flex;
 }
 .logomarca {
-    height: 10rem;
+    height: 90px;
 }
 header>nav>ul {
     list-style-type: none;
-    display: flex; 
+    display: flex;
 }
 .menua {
     text-decoration: none;
     font-size: 2rem;
     color: white;
-    /* border: 2px solid; */
     margin: 1rem;
-    padding: 0.5rem;
+    padding: 0;
     display: flex;
     justify-content: center;
 }
@@ -37,9 +36,17 @@ header>nav>ul {
     color: rgb(222, 129, 16);
 }
 
-/* Informaçoes referente ao main da Pagina index */
+/* Informaçoes referente ao corpo principal da Pagina index */
+#main-container {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 60px;
+}
 
-
+.banner {
+    height: 30vh;
+    margin-top: 10rem;    
+}
 
 /* Pagina referente a pagina Contato */
 div {
@@ -104,4 +111,14 @@ footer {
 .footerimg {
     height: 5vh;
     padding: 0 15px; 
+}
+
+@media screen and (max-width: 375px){
+header {
+    width: 100%;
+}
+.responsavel {
+    display: flex;
+    flex-direction: column;
+}
 }
