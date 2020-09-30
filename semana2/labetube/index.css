@@ -1,0 +1,68 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 235, 222);
+}
+
+Header {
+    font-size: 2rem;
+    color: rgb(164, 71, 14);
+    background-color: rgb(181, 94, 17);
+    height: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0 80px;
+}
+
+#grade {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+img {
+    width: 22vw;
+    height: auto;
+}
+
+.letrabloco {
+    text-decoration: none;
+    font-size: 2rem;
+    color: rgba(7, 6, 5, 0.632);
+}
+
+#botaovoltar{
+  background-color:rgb(228, 146, 84);
+  color: rgb(109, 52, 1);
+  padding: 15px 32px;
+  text-align: ;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+}
+
+article {
+    font-size: 25px;
+    margin: 30px
+}
+
+div{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    bottom: 0;
+    font-size: 3rem;
+    background-color: rgb(228, 146, 84);
+    color: rgb(235, 184, 139);
+    text-align: end;
+}
