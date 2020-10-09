@@ -45,26 +45,33 @@
 // trignometria(1, 2, 2)
 
 //5.
-//i.
-let array = [15, 30]
-let maximo = 0
-let minimo = 0
+// const a=Number(prompt('Digite uma valor'))
+// const b=Number(prompt('Digite o segundo valor' ))
 
-for (let i = 0; i < array.length; i++) {
-    if (array[i] > maximo){
-        maximo = array[i]
-    } else if (array[i] < maximo) {
-        minimo = array[i]
-    }
-}
-    if(array[0]%array[1]===0){
-        console.log("Numero divisivel")
-    }
+// let arrayNumero = [a,b]
+// let valorMaior = 0
+// let valorMenor = Infinity
 
+// for(let i=0 ;i < arrayNumero.length; i++){
+//     if (arrayNumero[i] > valorMaior ){
+//     valorMaior=arrayNumero[i]
+//     }
+//     if (arrayNumero[i] < valorMenor ) {
+//     valorMenor=arrayNumero[i]
+//     }
+// }
 
+// console.log ('ENTRADA:')
+// console.log(`os valores digitados são :${a} e ${b}`)
+// console.log ('SAIDA:')
+// console.log(`O valor maior é : ${valorMaior}`)
+// console.log(`O valor menor é : ${valorMenor}`)
 
+// if (valorMaior % valorMenor === 0)
+// {
+//   console.log(`o numero ${valorMaior} é divisivel por ${valorMenor}`) 
+// }
 
-console.log(minimo)
-
-console.log(`ENTRADA: \n${array[0]} e ${array[1]}`)
-console.log(`SAÍDA:\nO maior é: ${maximo}`)
+// if (valorMenor % valorMaior !== 0 ){
+//     console.log(`o numero ${valorMenor} não é divisivel por ${valorMaior}`) 
+// }
