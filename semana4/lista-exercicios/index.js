@@ -78,32 +78,38 @@
 
 // Exercícios de Funções
 // 1.
-let arrayDeNumeros = [199,5, 10, 55, 1, 200,2, 77, 65, 300 ]
-let primeiroValorMaior = 0
-let segundoValorMaior = 0
-let primeiroValorMenor = Infinity
-let segundoValorMenor = Infinity
+// let arrayDeNumeros = [199,5, 10, 55, 1, 200,2, 77, 65, 300 ]
+// let primeiroValorMaior = 0
+// let segundoValorMaior = 0
+// let primeiroValorMenor = Infinity
+// let segundoValorMenor = Infinity
 
-function valores(array) {
-    for (let i = 0; i < array.length; i++) {
-        if (array[i] > primeiroValorMaior) {
-            primeiroValorMaior = array[i]
-        }
-        if (array[i] < primeiroValorMenor) {
-            primeiroValorMenor = array[i]
-        }
-    for (let i = 0; i < array.length; i++)  {   
-        if (array[i] > segundoValorMaior && array[i] < primeiroValorMaior) {
-            segundoValorMaior = array[i]
-        }
+// function valores(array) {
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] > primeiroValorMaior) {
+//             primeiroValorMaior = array[i]
+//         }
+//         if (array[i] < primeiroValorMenor) {
+//             primeiroValorMenor = array[i]
+//         }
+//     for (let i = 0; i < array.length; i++)  {   
+//         if (array[i] > segundoValorMaior && array[i] < primeiroValorMaior) {
+//             segundoValorMaior = array[i]
+//         }
       
-        if (array[i] < segundoValorMenor && array[i] > primeiroValorMenor) {
+//         if (array[i] < segundoValorMenor && array[i] > primeiroValorMenor) {
             
-           segundoValorMenor = array[i]
-         }
-    }
-    }
-console.log(segundoValorMaior)
-console.log(segundoValorMenor)
+//            segundoValorMenor = array[i]
+//          }
+//     }
+//     }
+// console.log(segundoValorMaior)
+// console.log(segundoValorMenor)
+// }
+// valores(arrayDeNumeros)
+
+// 2.
+let mensagem = () => {
+    alert("Hello Future4")
 }
-valores(arrayDeNumeros)
+mensagem()
