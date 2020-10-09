@@ -6,3 +6,65 @@
 //O primeiro console.log irá apresentar a mensagem Quantidade total de numeros e a quantidade de numeros, o console.log 2 ira apresentar a quantidade de numeros pares do array1, e o console.log 3 irá apresentar os numeros impares do array2.
 
 //4. Temos uma constante com um array nomeado de numeros, duas variaveis com numero 1 e numero 2, no laço todos os numeros sao testados, o numero 1 é infinito sempre será maior que qualquer número, no if é testado se o numero é maior que o infinito, sempre será menor entao o numero 1, sera o numero, na segunda verificação pegamos o numermo e verificamos se ele é maior que 0 ele nao irá pegar o numero -10.
+
+//EXERCICIOS DE LOGICA DE PROGRAMACAO
+//1. for / for of / while
+// const numeros =[1, 2, 3, 4]
+// 2	
+// 3	    for(let i=0 ; i < numeros.length; i++){
+// 4	        const numero = numeros[i]
+// 5	        console.log(numero)
+
+//2.
+//a. False
+//b. False
+//c. True
+//d. True
+//e. true
+
+// 3.
+// Não, faltava o = o [] e o valor na const quantidadeDeNumeros, na condiçao de continuaçao estava com um = que nao deveria e faltava o incremento responsável para quebrar o loop.
+// const quantidadeDeNumerosPares=[5]
+// let i = 0 //começo
+// while(i < quantidadeDeNumerosPares) { // condiçao de continuaçao
+//   console.log(i*2) // açao a ser repetida
+//   i++ // incremento
+// }
+
+//4. 
+// function trignometria (a, b, c){
+//     if (a === b && b === c){
+//         console.log("Equilátero")
+//     } else if (a!==b && b!==c && c!==a) {
+//         console.log("Escaleno")
+//     } else {
+//         console.log("Isósceles")
+//     }
+// }
+
+// trignometria(1, 2, 2)
+
+//5.
+//i.
+let array = [15, 30]
+let maximo = 0
+let minimo = 0
+
+for (let i = 0; i < array.length; i++) {
+    if (array[i] > maximo){
+        maximo = array[i]
+    } else if (array[i] < maximo) {
+        minimo = array[i]
+    }
+}
+    if(array[0]%array[1]===0){
+        console.log("Numero divisivel")
+    }
+
+
+
+
+console.log(minimo)
+
+console.log(`ENTRADA: \n${array[0]} e ${array[1]}`)
+console.log(`SAÍDA:\nO maior é: ${maximo}`)
