@@ -26,3 +26,8 @@ h2 {
   justify-content: center;
   margin-bottom: 20px;
 }
+
+.container-email-endereco{
+  width: 40vw;
+  margin: 10px;
+}
