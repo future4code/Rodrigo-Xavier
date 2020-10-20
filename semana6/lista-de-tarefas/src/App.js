@@ -36,10 +36,7 @@ class App extends React.Component {
       inputValue: '',
       filtro: '',
     }
-
-  
-
-
+    
   componentDidUpdate() {
 
   };
@@ -67,20 +64,19 @@ class App extends React.Component {
   }
 
   selectTarefa = (id) => {
-    // const novaListaDeTarefas = this.state.tarefas.map((tarefa) => {
-    //   if (tarefa.id === id) {
-    //     const novaTarefa = {
-    //       ... tarefa,
-    //       completa: !tarefa.completa
-    //     }
-    //     return novaTarefa
-    //   } else {
-    //     return tarefa
-    //   }
+    const novaListaDeTarefas = this.state.tarefas.map((tarefa) => {
+      if (tarefa.id === id) {
+        const novaTarefa = {
+          ...tarefa,
+          completa: !tarefa.completa
+        }
+        return novaTarefa
+      } else {
+        return tarefa
+      }
 
-    // })
-    // this.setState ({tarefas:novaTarefa})
-
+    })
+    this.setState ({tarefas:novaListaDeTarefas})
   }
 
   onChangeFilter = (event) => {
