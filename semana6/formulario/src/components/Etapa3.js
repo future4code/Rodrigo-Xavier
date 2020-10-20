@@ -18,8 +18,6 @@ export class InformacoesGeraisDeEnsino extends React.Component{
             <option value='Curso de inglês'>Curso de inglês</option>
         </select>
         
-
-        
         </div>
     )
     }
