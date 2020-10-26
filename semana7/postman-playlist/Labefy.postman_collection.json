@@ -6,79 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "playlist rock",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "rodrigo-xavier-dumont",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"name\": \"musicas-rock\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
-					"protocol": "https",
-					"host": [
-						"us-central1-labenu-apis",
-						"cloudfunctions",
-						"net"
-					],
-					"path": [
-						"labefy",
-						"playlists"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "playlist mpb",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Authorization",
-						"type": "text",
-						"value": "rodrigo-xavier-dumont"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"name\": \"musicas-mpb\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
-					"protocol": "https",
-					"host": [
-						"us-central1-labenu-apis",
-						"cloudfunctions",
-						"net"
-					],
-					"path": [
-						"labefy",
-						"playlists"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "playlist reggae",
+			"name": "createPlaylist",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -109,28 +37,6 @@
 						"labefy",
 						"playlists"
 					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "getAllPlaylists",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": ""
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "deletePlaylist",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": ""
 				}
 			},
 			"response": []
@@ -174,6 +80,28 @@
 			"response": []
 		},
 		{
+			"name": "getAllPlaylists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "searchPlaylist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "getPlaylistTracks",
 			"request": {
 				"method": "GET",
@@ -197,6 +125,64 @@
 						"playlists",
 						"2cf698fb-b8f6-4fb9-92e4-4a6d6223f2f5",
 						"tracks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePlaylist",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "rodrigo-xavier-dumont",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/7eff9bfb-6678-4609-830b-f9ab28fa5199",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"7eff9bfb-6678-4609-830b-f9ab28fa5199"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteTracks",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "rodrigo-xavier-dumont",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/ec64fed1-bf66-4902-b7c9-1ae60c249897/tracks/1a733f5e-74c5-4881-9e21-5a3831d6219d",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"ec64fed1-bf66-4902-b7c9-1ae60c249897",
+						"tracks",
+						"1a733f5e-74c5-4881-9e21-5a3831d6219d"
 					]
 				}
 			},
