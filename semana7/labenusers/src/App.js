@@ -5,49 +5,26 @@ import styled from "styled-components";
 import axios from 'axios'
 
 
-
-
-
 class App extends React.Component {
 state = {
-  estaLogada : false,
+  pagFormulario : true,
 };
 
-  onClickLogin = () => {
-    this.setState({ estaLogada: true});
-    //essa função muda o estado estaLogada para verdadeiro
-  };
-
-  onCLickLogout = () => {
-    this.setState({ estaLogada: false});
-  };
+mudarPag = () => {
+  this.setState({pagFormulario: !this.state.pagFormulario});
+}
 
 
   render() {
-    const paginaRenderizada = () => {
-      if(this.state.estaLogada) {
-        return (
-          <div>
-          <Lista /> 
-          <button onCLick={this.onCLickLogout}>VOLTAR</button>
-          </div>
-        )
-      } else {
-      return ( 
-        <div>
-        <Login />
-        <button onCLick={this.onClickLogin}>VOLTAR</button>
-        </div>
-        )
-    }
-  }
+    const paginaAtual = this.state.pagFormulario ? <Login /> : <Lista />;
 
   return (
     <div>
-    {paginaRenderizada()}
+    {paginaAtual}
+    <button onClick={this.mudarPag}>Mudar de Página</button>
     </div>
   );
-}
+  }
 }
 
 export default App;
