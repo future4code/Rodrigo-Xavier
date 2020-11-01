@@ -1,5 +1,23 @@
 import React from 'react';
 import axios from 'axios';
+import styled from 'styled-components';
+
+const BotaoCriar = styled.button`
+&:hover {
+  cursor: pointer;
+}
+  border: 1px solid red;
+  border-radius: 10px;
+  color: red;
+  margin-left: 10px;
+  background-color: white;
+  
+`;
+
+const Input = styled.input`
+  border: 1px solid red;
+  border-radius: 10px;
+`;
 
 class CriarPlaylist extends React.Component {
   state = {
@@ -31,8 +49,8 @@ class CriarPlaylist extends React.Component {
 
     return (
       <div className="App">
-        <input value={this.state.nomePlaylist} onChange={this.onChangeNomePlaylist} placeholder="Inserir nome da Playlist" />
-        <button onClick={this.criarPlaylist} >Criar Playlist</button>
+        <Input value={this.state.nomePlaylist} onChange={this.onChangeNomePlaylist} placeholder="Nome da Playlist" />
+        <BotaoCriar onClick={this.criarPlaylist} >Criar Playlist</BotaoCriar>
       </div>
     );
   }

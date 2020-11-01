@@ -4,10 +4,12 @@ import CriarPlaylist from './components/criarPlaylist';
 import VisualizarPlaylist from './components/visualizarPlaylist';
 import DetalhesPlaylist from './components/detalhesPlaylist';
 
+
+
 class App extends React.Component {
   render(){
   return (
-    <div className="App">
+    <div>
      <CriarPlaylist />
      <VisualizarPlaylist />
      <DetalhesPlaylist />
