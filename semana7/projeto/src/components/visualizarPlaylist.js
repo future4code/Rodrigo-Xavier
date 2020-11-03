@@ -14,6 +14,18 @@ const DeletePlaylist = styled.button`
   font-size: 12px;
 `;
 
+const BotaoVisualizar = styled.button`
+&:hover {
+  cursor: pointer;
+}
+  border: 1px solid red;
+  border-radius: 10px;
+  color: red;
+  margin-left: 10px;
+  background-color: white;
+  font-size: 12px;
+`;
+
 class VisualizarPlaylist extends React.Component {
 
   state = {
@@ -57,6 +69,7 @@ class VisualizarPlaylist extends React.Component {
     const renderizarLista = this.state.lista.map(playlist => {
       return <p key={playlist.id}>{playlist.name}
       <DeletePlaylist onClick={() => this.deletarPlaylist(playlist.id)} >Excluir</DeletePlaylist>
+      <BotaoVisualizar>Visualizar</BotaoVisualizar>
       </p>
     })
 

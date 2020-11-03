@@ -1,4 +1,3 @@
-
 import axios from 'axios';
 import React from 'react';
 
@@ -12,7 +11,7 @@ class DetalhesPlaylist extends React.Component {
   }
 
   mostrarDetalhesPlaylist = (playlistId) => {
-    axios.get(`https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/$playlistId/tracks`, {
+    axios.get(`https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/${playlistId}/tracks`, {
       headers: {
         Authorization: 'rodrigo-xavier-dumont'
       }
@@ -23,10 +22,6 @@ class DetalhesPlaylist extends React.Component {
       console.log(error.message)
     })
   }
-  
-
-
-
 
   render() {
     const renderizarPlaylit = this.state.detalhesPlaylist.map(playlist => {
