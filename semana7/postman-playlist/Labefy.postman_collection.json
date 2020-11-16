@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "547474ee-ae6c-4ebd-9d8c-6a6bd6b23669",
+		"name": "Labefy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createPlaylist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "rodrigo-xavier-dumont"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"musicas-reggae\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addTrackToPlaylist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "rodrigo-xavier-dumont",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Smells Like Teen Spirit\", \n    \"artist\": \"Nirvana\",\n    \"url\": \"https://www.youtube.com/watch?v=hTWKbfoikeg&list=PL3485902CC4FB6C67&index=4&ab_channel=NirvanaVEVO\"\n},\n{\n    \"name\": \"Every Breath You Take\", \n    \"artist\": \"The Police\",\n    \"url\": \"https://www.youtube.com/watch?v=OMOGaugKpzs&list=PL3485902CC4FB6C67&index=6&ab_channel=ThePoliceVEVO\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/2cf698fb-b8f6-4fb9-92e4-4a6d6223f2f5/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"2cf698fb-b8f6-4fb9-92e4-4a6d6223f2f5",
+						"tracks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllPlaylists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "searchPlaylist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPlaylistTracks",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "rodrigo-xavier-dumont",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/2cf698fb-b8f6-4fb9-92e4-4a6d6223f2f5/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"2cf698fb-b8f6-4fb9-92e4-4a6d6223f2f5",
+						"tracks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePlaylist",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "rodrigo-xavier-dumont",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/7eff9bfb-6678-4609-830b-f9ab28fa5199",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"7eff9bfb-6678-4609-830b-f9ab28fa5199"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteTracks",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "rodrigo-xavier-dumont",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/ec64fed1-bf66-4902-b7c9-1ae60c249897/tracks/1a733f5e-74c5-4881-9e21-5a3831d6219d",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"ec64fed1-bf66-4902-b7c9-1ae60c249897",
+						"tracks",
+						"1a733f5e-74c5-4881-9e21-5a3831d6219d"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
