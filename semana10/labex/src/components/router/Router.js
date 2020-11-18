@@ -1,10 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import AdmUser from '../AdmUser';
 import CreateTripPage from '../CreateTripPage';
 import ErrorPage from '../ErrorPage';
 import HomePage from '../HomePage';
 import ListTripsPage from '../ListTripsPage';
 import LoginPage from '../LoginPage';
+import TripDetailsPage from '../TripDetailsPage';
 
 function  Router() {
   return (
@@ -21,6 +23,12 @@ function  Router() {
         </Route>
         <Route exact path="/trips/create">
           <CreateTripPage />
+        </Route>
+        <Route exact path="/adm-user">
+          <AdmUser />
+        </Route>
+        <Route exact path="/trips/details">
+          <TripDetailsPage />
         </Route>
       </Switch>
     </BrowserRouter>
