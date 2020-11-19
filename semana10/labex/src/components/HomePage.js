@@ -1,8 +1,7 @@
-import axios from 'axios';
+
 import React from 'react';
 import { useHistory } from "react-router-dom";
 import styled from 'styled-components';
-import Header from './Header'
 
 const ContainerHome = styled.div`
   display: flex;
@@ -10,7 +9,7 @@ const ContainerHome = styled.div`
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  height: 20vw;
+  height: 300px;
 `;
 
 const LoginButton = styled.button`
@@ -52,13 +51,10 @@ return (
   <div>
     
     <ContainerHome>
-    
-      {/* <Logo1 src= {Logo}/> */}
       <h2>Área Restrita</h2>
       <LoginButton onClick={goToLoginPage}> Login </LoginButton>
       <h2>Quer viajar conosco?</h2>
       <TravelButton onClick={goToListTripsPage}> Eu quero! </TravelButton>
-  
     </ContainerHome>
     </div>
 )

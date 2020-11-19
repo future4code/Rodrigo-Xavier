@@ -1,7 +1,30 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { useHistory } from "react-router-dom";
+import styled from 'styled-components';
 import ButtonBackHome from './buttons/ButtonBackHome';
+
+const ContainerListTrips = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 420px;
+  height: 500px;
+  margin-left: 40%;
+`;
+
+const ButtonApply = styled.button`
+ background-color: black;
+  border: 1px solid black;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 5px;
+  cursor: pointer;
+`;
 
 function  ListTripsPage() {
   const history = useHistory()
@@ -22,13 +45,15 @@ function  ListTripsPage() {
 }, [])
 
   return (
-    <div>
+    <ContainerListTrips>
+      {/* <div> */}
         {trips.map((trip) => {
-          return <p key={trip.id}>{trip.nome}</p>
+          return <p key={trip.id}> {trip.name} - {trip.date} - {trip.planet} - {trip.durationInDays} dias {trip.description} <ButtonApply onClick={goToApplicationFormPage} >Candidatar</ButtonApply></p>
         })}
-        <button onClick={goToApplicationFormPage} >Candidatar</button>
+        
         <ButtonBackHome />
-    </div>
+        {/* </div> */}
+    </ContainerListTrips>
   )
 }
 
