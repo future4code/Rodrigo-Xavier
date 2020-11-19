@@ -9,7 +9,7 @@ const BackButton = styled.button`
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 14px;
   margin: 4px 2px;
   margin-top: 100px;
   cursor: pointer;

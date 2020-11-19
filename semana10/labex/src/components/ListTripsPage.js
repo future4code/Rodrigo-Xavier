@@ -9,9 +9,12 @@ const ContainerListTrips = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width:100%;
+`;
+
+const TripCard = styled.div`
+  text-align: center;
   width: 420px;
-  height: 500px;
-  margin-left: 40%;
 `;
 
 const ButtonApply = styled.button`
@@ -22,7 +25,7 @@ const ButtonApply = styled.button`
   text-align: center;
   text-decoration: none;
   font-size: 14px;
-  margin-top: 5px;
+  margin-top: 10px;
   cursor: pointer;
 `;
 
@@ -46,13 +49,13 @@ function  ListTripsPage() {
 
   return (
     <ContainerListTrips>
-      {/* <div> */}
+      <TripCard>
         {trips.map((trip) => {
           return <p key={trip.id}> {trip.name} - {trip.date} - {trip.planet} - {trip.durationInDays} dias {trip.description} <ButtonApply onClick={goToApplicationFormPage} >Candidatar</ButtonApply></p>
         })}
         
         <ButtonBackHome />
-        {/* </div> */}
+      </TripCard>
     </ContainerListTrips>
   )
 }
