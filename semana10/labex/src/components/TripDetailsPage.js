@@ -1,6 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useProtectedPage } from '../components/hooks/UseProtectedPage' 
+import { useProtectedPage } from '../components/hooks/UseProtectedPage'
+import styled from 'styled-components';
+import ButtonBackAdm from './buttons/ButtonBackAdm';
+
+const ContainerTrioDetailsPage = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 50vh;
+`;
 
 function  TripDetailsPage() {
   const [trip, setTrip] = useState({});
@@ -19,6 +30,7 @@ function  TripDetailsPage() {
         })
       .then((res) => {
         setTrip(res.data.trip);
+        console.log(res)
       })
       .catch((err) => {
         console.log(err);
@@ -26,11 +38,16 @@ function  TripDetailsPage() {
   };
 
   return (
-    <div>
-      <p>Detalhes</p>
-      <p>{trip.name}</p>
-      <p>{trip.planet}</p>
-    </div>
+    <ContainerTrioDetailsPage>
+      <div>
+      <h4>Detalhes</h4>
+      <p> <b>Nome:</b> {trip.name}</p>
+      <p><b>Planeta:</b> {trip.planet}</p>
+      <p><b>Data:</b> {trip.date}</p>
+      <p><b>Duração:</b> {trip.durationInDays} dias</p>
+      </div>
+      <ButtonBackAdm />
+    </ContainerTrioDetailsPage>
   )
 }
 

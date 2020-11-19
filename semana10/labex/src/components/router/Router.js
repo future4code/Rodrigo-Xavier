@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import AdmUser from '../AdmUser';
+import ApplicationFormPage from '../ApplicationFormPage';
 import CreateTripPage from '../CreateTripPage';
 import ErrorPage from '../ErrorPage';
 import HomePage from '../HomePage';
@@ -29,6 +30,9 @@ function  Router() {
         </Route>
         <Route exact path="/trips/details">
           <TripDetailsPage />
+        </Route>
+        <Route exact path="/application-form">
+          <ApplicationFormPage />
         </Route>
       </Switch>
     </BrowserRouter>

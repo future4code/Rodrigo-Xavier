@@ -2,7 +2,7 @@ import axios from 'axios';
 import React from 'react';
 import { useHistory } from "react-router-dom";
 import styled from 'styled-components';
-import Logo from '../img/labex.svg'
+import Header from './Header'
 
 const ContainerHome = styled.div`
   display: flex;
@@ -10,7 +10,7 @@ const ContainerHome = styled.div`
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  height: 80vh;
+  height: 20vw;
 `;
 
 const LoginButton = styled.button`
@@ -37,11 +37,6 @@ const TravelButton = styled.button`
   cursor: pointer;
 `;
 
-const Logo1 = styled.img`
- margin-bottom: 70px;
- width: 200px;
-`;
-
 function  HomePage() {
 const history = useHistory()
 
@@ -53,14 +48,19 @@ const goToListTripsPage = () => {
 }
 
 return (
+  
+  <div>
+    
     <ContainerHome>
-      <Logo1 src= {Logo}/>
-      <h1>Área Restrita</h1>
+    
+      {/* <Logo1 src= {Logo}/> */}
+      <h2>Área Restrita</h2>
       <LoginButton onClick={goToLoginPage}> Login </LoginButton>
-      <h1>Quer viajar conosco?</h1>
+      <h2>Quer viajar conosco?</h2>
       <TravelButton onClick={goToListTripsPage}> Eu quero! </TravelButton>
   
     </ContainerHome>
+    </div>
 )
 }
 
