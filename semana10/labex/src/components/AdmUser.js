@@ -57,7 +57,7 @@ function  AdmUser() {
         }
 
     const goToListTripPage = () => {
-        history.push("/trips/list")
+        history.push("/trips/adm/list")
         }
 
     const goToTripsPage = () => {

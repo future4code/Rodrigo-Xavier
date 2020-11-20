@@ -10,23 +10,18 @@ const ContainerLogin = styled.div`
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  height: 80vh;
-`;
-
-const Logo1 = styled.img`
- margin-bottom: 70px;
- width: 200px;
+  height: 250px;
 `;
 
 const LoginButton = styled.button`
  background-color: black;
   border: 1px solid black;
   color: white;
-  padding: 15px 43px;
+  padding: 10px 30px;
   text-align: center;
   text-decoration: none;
-  font-size: 18px;
-  margin: 4px 2px;
+  font-size: 15px;
+  margin: 10px 2px;
   cursor: pointer;
 `;
 
@@ -90,7 +85,6 @@ function  LoginPage() {
 
   return(
     <ContainerLogin>
-      <Logo1 src= {Logo}/>
         <input value={email} onChange={handleEmail} placeholder="E-mail"/>
         <input value={password} onChange={handlePassword} placeholder="Senha" type="password" />
         <LoginButton onClick={login}>Logar</LoginButton>

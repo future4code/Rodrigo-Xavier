@@ -9,7 +9,7 @@ const ContainerHome = styled.div`
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  height: 300px;
+  height: 250px;
 `;
 
 const LoginButton = styled.button`

@@ -5,6 +5,7 @@ import ApplicationFormPage from '../ApplicationFormPage';
 import CreateTripPage from '../CreateTripPage';
 import ErrorPage from '../ErrorPage';
 import HomePage from '../HomePage';
+import ListTripsAdmPage from '../ListTripsAdmPage';
 import ListTripsPage from '../ListTripsPage';
 import LoginPage from '../LoginPage';
 import TripDetailsPage from '../TripDetailsPage';
@@ -21,6 +22,9 @@ function  Router() {
         </Route>
         <Route exact path="/trips/list">
           <ListTripsPage />
+        </Route>
+        <Route exact path="/trips/adm/list">
+          <ListTripsAdmPage />
         </Route>
         <Route exact path="/trips/create">
           <CreateTripPage />
