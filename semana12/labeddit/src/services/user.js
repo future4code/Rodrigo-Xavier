@@ -24,7 +24,7 @@ export const registration = (body, history) => {
 export const createPost = (body, history) => {
     const token = localStorage.getItem("token");
     axios
-      .post(`${BaseUrl}/posts`, body, {
+      .post(`${BASE_URL}/posts`, body, {
         headers: {
           Authorization: token,
         },
