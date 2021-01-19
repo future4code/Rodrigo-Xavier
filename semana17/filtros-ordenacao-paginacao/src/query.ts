@@ -1,18 +1,23 @@
 import { connection } from "./index"
 
-export default async function selectUsersByName(userName: string):Promise<any> {
+export async function selectUsersByName(userName: string):Promise<any> {
     const result = await connection.raw(`
-         SELECT * 
+         SELECT id, name, email, type
          FROM aula48_exercicio
-         WHERE name = "{userName}"
+         WHERE name = "${userName}"
     `)
    
     return result[0]
  }
 
-
-//  const result = await connection
-//        .select("*")
-//        .from("aula48_exercicio")
-//        .where("name", "LIKE", `%{userName}%`)
+ 
+export async function selectUsersBytype(type: string):Promise<any> {
+    const result = await connection.raw(`
+         SELECT id, name, email, type
+         FROM aula48_exercicio
+         WHERE name = "${type}"
+    `)
+   
+    return result[0]
+ }
     

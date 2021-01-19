@@ -3,7 +3,8 @@ import knex from "knex";
 import cors from "cors";
 import dotenv from "dotenv";
 import { AddressInfo } from "net";
-import { getAllUsersByName } from "./endpoint"
+import { getAllUsersByName, getUsersByType } from "./endpoint"
+
 
 dotenv.config();
 
@@ -25,12 +26,12 @@ app.use(cors())
 
 app.get("/userbyname", getAllUsersByName)
 
+app.get("/getUsersByType", getUsersByType)
 
 
 
 
-
-const server = app.listen(process.env.PORT || 3003, () => {
+const server = app.listen(process.env.PORT || 3004, () => {
    if (server) {
       const address = server.address() as AddressInfo;
       console.log(`Server is running in http://localhost:${address.port}`);
