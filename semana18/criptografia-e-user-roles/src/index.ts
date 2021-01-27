@@ -9,6 +9,7 @@ import createTask from './endpoints/createTask'
 import getTaskById from './endpoints/getTaskById'
 import {generate} from "./service/idGenerator";
 import { login } from './endpoints/login'
+import { hash } from "./service/generateHash"
 
 dotenv.config()
 
