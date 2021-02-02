@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import {insertTask} from "../data/insertTask";
-import { generateId } from "../services/idGenerator";
+import { generateId } from "../business/services/idGenerator";
 
 export const createTask = async (
    req: Request,

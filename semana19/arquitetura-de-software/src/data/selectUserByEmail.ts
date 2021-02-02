@@ -1,5 +1,5 @@
-import { connection } from ".."
-import { user } from "../types/user"
+import { connection } from "../data/connection"
+import { user } from "../business/entities/user"
 
 export const selectUserByEmail = async (
    email: string
@@ -12,7 +12,6 @@ export const selectUserByEmail = async (
       return {
          id: result[0].id,
          name: result[0].name,
-         nickname: result[0].nickname,
          email: result[0].email,
          password: result[0].password,
          role: result[0].role

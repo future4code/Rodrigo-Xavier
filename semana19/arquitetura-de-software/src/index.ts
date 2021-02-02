@@ -1,6 +1,6 @@
 import express from 'express'
 import cors from 'cors'
-import { signup } from './endpoints/signup'
+import { signup } from './Controller/userController'
 import { createTask } from './endpoints/createTask'
 import { getTaskById } from './endpoints/getTaskById'
 import { login } from './endpoints/login'

@@ -1,5 +1,5 @@
-import { connection } from "../index";
-import { user } from "../types/user";
+import { connection } from "../data/connection";
+import { user } from "../business/entities/user";
 
 export const insertUser = async(
    user: user
@@ -7,7 +7,6 @@ export const insertUser = async(
    await connection.insert({
       id: user.id,
       name: user.name,
-      nickname: user.nickname,
       email: user.email,
       password: user.password,
       role: user.role
